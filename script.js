@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       spanXP.id = "xp";
       let xp = chars;
       xp = Math.min(xp, 500);
-      spanXP.innerText = xp + " XP";
+      spanXP.innerText = xp + "xp";
 
       resultadoDiv.appendChild(labelXP);
       resultadoDiv.appendChild(spanXP);
