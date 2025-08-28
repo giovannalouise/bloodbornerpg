@@ -54,6 +54,73 @@ document.addEventListener("DOMContentLoaded", () => {
   countText();
 });
 
+function calcularNivelPorXp(xpTotal) {
+    if (typeof xpTotal !== 'number' || xpTotal < 0) {
+        return null; 
+    }
+
+    const faixas = [
+        { ateNivel: 10, xpPorPasso: 100, xpBase: 0 },
+        { ateNivel: 20, xpPorPasso: 300, xpBase: 1000 },  
+        { ateNivel: 30, xpPorPasso: 500, xpBase: 4000 },  
+        { ateNivel: 40, xpPorPasso: 800, xpBase: 9000 },  
+        { ateNivel: 50, xpPorPasso: 1000, xpBase: 17000 }
+    ];
+
+    for (const f of faixas) {
+        const xpMaximoDaFaixa = f.xpBase + (10 * f.xpPorPasso);
+
+        if (xpTotal < xpMaximoDaFaixa) {
+            const xpNaFaixa = xpTotal - f.xpBase;
+            
+            let nivel = (f.ateNivel - 9) + Math.floor(xpNaFaixa / f.xpPorPasso);
+            let xpNoNivelAtual = xpNaFaixa % f.xpPorPasso;
+            let xpParaProximoNivel = f.xpPorPasso;
+            
+            if (nivel > 50) nivel = 50;
+
+            return {
+                nivel: nivel,
+                xpNoNivelAtual: xpNoNivelAtual,
+                xpParaProximoNivel: xpParaProximoNivel,
+                progressoPercentual: Math.floor((xpNoNivelAtual / xpParaProximoNivel) * 100)
+            };
+        }
+    }
+
+    return {
+        nivel: 50,
+        xpNoNivelAtual: 1000,
+        xpParaProximoNivel: 1000,
+        progressoPercentual: 100
+    };
+}
+
+function exibirResultado() {
+            const xpInput = document.getElementById('xpInput');
+            const resultadoDiv = document.getElementById('resultado');
+            const xpTotal = parseInt(xpInput.value); // Converte o valor do input para número
+
+            if (isNaN(xpTotal)) {
+                resultadoDiv.innerHTML = '<p style="color: red;">Por favor, insira um número válido.</p>';
+                return;
+            }
+
+            const resultado = calcularNivelPorXp(xpTotal);
+
+            if (resultado) {
+                resultadoDiv.innerHTML = `
+                    <h3>Detalhes do Nível</h3>
+                    <p><strong>Nível Atual:</strong> ${resultado.nivel}</p>
+                    <p><strong>Xp no Nível:</strong> ${resultado.xpNoNivelAtual} / ${resultado.xpParaProximoNivel}</p>
+                    <p><strong>Progresso:</strong> ${resultado.progressoPercentual}%</p>
+                `;
+            } else {
+                resultadoDiv.innerHTML = '<p style="color: red;">Houve um erro no cálculo. Verifique o valor inserido.</p>';
+            }
+        }
+
+
 function mudarConteudo(cla) {
     const conteudoDiv = document.getElementById('conteudo-clans');
     let htmlConteudo = '';
