@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const spanXP = document.createElement("span");
       spanXP.id = "xp";
       let xp = chars;
-      xp = Math.min(xp, 500);
+      xp = Math.min(xp, 100);
       spanXP.innerText = xp + "xp";
 
       resultadoDiv.appendChild(labelXP);
@@ -96,29 +96,48 @@ function calcularNivelPorXp(xpTotal) {
     };
 }
 
+function calcularPVPorNivel(nivel) {
+    if (nivel <= 10) {
+        return 50;
+    } else if (nivel <= 20) {
+        return 75;
+    } else if (nivel <= 30) {
+        return 125;
+    } else if (nivel <= 40) {
+        return 200;
+    } else if (nivel <= 50) {
+        return 300;
+    } else {
+        return 300; // Nível 50 ou superior
+    }
+}
+
 function exibirResultado() {
-            const xpInput = document.getElementById('xpInput');
-            const resultadoDiv = document.getElementById('resultado');
-            const xpTotal = parseInt(xpInput.value); // Converte o valor do input para número
+    const xpInput = document.getElementById('xpInput');
+    const resultadoDiv = document.getElementById('resultado');
+    const xpTotal = parseInt(xpInput.value);
 
-            if (isNaN(xpTotal)) {
-                resultadoDiv.innerHTML = '<p style="color: red;">Por favor, insira um número válido.</p>';
-                return;
-            }
+    if (isNaN(xpTotal)) {
+        resultadoDiv.innerHTML = '<p style="color: red;">Por favor, insira um número válido.</p>';
+        return;
+    }
 
-            const resultado = calcularNivelPorXp(xpTotal);
+    const resultadoNivel = calcularNivelPorXp(xpTotal);
 
-            if (resultado) {
-                resultadoDiv.innerHTML = `
-                    <h3>Detalhes do Nível</h3>
-                    <p><strong>Nível Atual:</strong> ${resultado.nivel}</p>
-                    <p><strong>Xp no Nível:</strong> ${resultado.xpNoNivelAtual} / ${resultado.xpParaProximoNivel}</p>
-                    <p><strong>Progresso:</strong> ${resultado.progressoPercentual}%</p>
-                `;
-            } else {
-                resultadoDiv.innerHTML = '<p style="color: red;">Houve um erro no cálculo. Verifique o valor inserido.</p>';
-            }
-        }
+    if (resultadoNivel) {
+        const pvTotal = calcularPVPorNivel(resultadoNivel.nivel);
+
+        resultadoDiv.innerHTML = `
+            <h3>Detalhes do Personagem</h3>
+            <p><strong>Nível Atual:</strong> ${resultadoNivel.nivel}</p>
+            <p><strong>Pontos de Vida (pv):</strong> ${pvTotal}</p>
+            <p><strong>Xp no Nível:</strong> ${resultadoNivel.xpNoNivelAtual} / ${resultadoNivel.xpParaProximoNivel}</p>
+            <p><strong>Progresso:</strong> ${resultadoNivel.progressoPercentual}%</p>
+        `;
+    } else {
+        resultadoDiv.innerHTML = '<p style="color: red;">Houve um erro no cálculo. Verifique o valor inserido.</p>';
+    }
+}
 
 
 function mudarConteudo(cla) {
