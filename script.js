@@ -61,6 +61,25 @@ function mudarConteudo(cla) {
     switch (cla) {
         case 'sangreal':
             htmlConteudo = `
+
+            `;
+            break;
+            default:
+            htmlConteudo = `
+                <h4>Nenhum Clã selecionado.</h4>
+            `;
+    }
+
+    conteudoDiv.innerHTML = htmlConteudo;
+}
+
+function mudarConteudo(cla) {
+    const conteudoDiv = document.getElementById('conteudo-clans');
+    let htmlConteudo = '';
+
+    switch (cla) {
+        case 'sangreal':
+            htmlConteudo = `
                 <h3>✶ Sangreal</h3>
                 <p>Descendentes de linhagens reais vampíricas, ou daqueles que foram os primeiros. Possuem maior influência no mundo vampírico, além de serem respeitados por Tenebris num geral. Dizem que seu sangue, ao invés de vermelho, é azul.</p>
                 <br>
