@@ -39,17 +39,15 @@
             <h2>✷ Strigois</h2>
             <p>✶ São seres que desafiaram o ciclo natural da vida e morte, seja por magia necromântica, rituais proibidos ou uma maldição. Permanecem neste plano como aberrações demoníacas, atormentados por lembranças quebradas e um apetite insaciável. ✶</p>
             <br>
-            <h3>✶ Ghoul</h3>
-            <p>✶ Espectros Condenados, amaldiçoados após à morte a vagar pelo mundo sem um objetivo concreto. Odiados por todas as raças, são seres renegados. ✶</p>
-            <br>
-            <h4>Marcas</h4>
-            <p>Descrição das Marcas</p>
-            <br>
-            <h3>✶ Necrophage</h3>
-            <p>✶ Criaturas que se alimentam de carne humana e são capazes de controlar os mortos. Eles são temidos por sua habilidade de corromper e dominar os vivos. ✶</p>
-            <br>
-            <h4>Marcas</h4>
-            <p>Descrição das Marcas</p>
+            <h3>✷ Selecione um Clã para ver a descrição.</h3>
+            <div class="clans-botoes">
+                <button onclick="mudarConteudo('ghoul')">Ghoul</button>
+                <button onclick="mudarConteudo('necrophage')">Necrophage</button>
+            </div>
+
+            <div id="conteudo-clans">
+                <h4>Nenhum Clã selecionado.</h4>
+            </div>
             <br>
         </section>
     </main>

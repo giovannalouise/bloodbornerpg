@@ -39,17 +39,15 @@
             <h2>✷ Humanos</h2>
             <p>✶ A raça mais versátil e adaptável, os humanos possuem uma ampla gama de habilidades e talentos. Sua ambição e criatividade os tornam uma força a ser reconhecida. ✶</p>
             <br>
-            <h3>✶ Purge</h3>
-            <p>✶ Seres humanos impossibilitados de utilizar a magia, aprenderam a manipular os metais e forjar armas e apetrechos que  os permitem sobreviver neste mundo sobrenatural.</p>
-            <br>
-            <h4>Marcas</h4>
-            <p>Descrição das Marcas</p>
-            <br>
-            <h3>✶ Eclipse</h3>
-            <p>✶ Uma sub-raça de humanos que se especializa em caçar e eliminar criaturas sobrenaturais. Eles são conhecidos por sua determinação e habilidades de combate. ✶</p>
-            <br>
-            <h4>Marcas</h4>
-            <p>Descrição das Marcas</p>
+            <h3>✷ Selecione um Clã para ver a descrição.</h3>
+            <div class="clans-botoes">
+                <button onclick="mudarConteudo('purge')">Purge</button>
+                <button onclick="mudarConteudo('eclipse')">Eclipse</button>
+            </div>
+
+            <div id="conteudo-clans">
+                <h4>Nenhum Clã selecionado.</h4>
+            </div>
             <br>
         </section>
     </main>
