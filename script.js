@@ -239,9 +239,9 @@ function mudarConteudo(cla) {
                 <br>
             `;
             break;
-        case 'dríades':
+        case 'nymph':
             htmlConteudo = `
-                <h3>✶ Dríades</h3>
+                <h3>✶ Nymph</h3>
                 <p>✶ Ligadas diretamente às árvores e à vida vegetal. São capazes de se comunicar com as plantas e manipular a vegetação ao seu redor para se proteger ou atacar. ✶</p>
                 <br>
                 <h4>Marcas</h4>
