@@ -1,57 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BloodBorne RPG</title>
-    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dx5itxygw/image/upload/v1755956047/B-removebg-preview_fabdem.png">
-    <link rel="stylesheet" href="/functions/styles.css">
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://res.cloudinary.com/dx5itxygw/image/upload/v1755956047/B-removebg-preview_fabdem.png"
+    />
+    <link rel="stylesheet" href="/functions/styles.css" />
     <script src="../../script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1><a href="/index.html">BloodBorne</a></h1>
+      <h1><a href="/index.html">BloodBorne</a></h1>
     </header>
     <main>
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="/pages/histini.html">História do RPG</a></li>
-                    <li><a href="/pages/mecânicas/mecini.html">Mecânicas de Jogo</a></li>
-                    <li><a href="/pages/ferramentas/ferrini.html" class="active">Ferramentas do RPG</a></li>
-                    <li><a href="/pages/mapas/mapa.html">Mapa do Mundo</a></li>
-                    <li><a href="/pages/raças/racini.html">Raças Sobrenaturais</a></li>
-                    <li><a href="/pages/outros/outrini.html">Conteúdo Adicional</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li><a href="/pages/ferramentas/texto.html">Texto</a></li>
-                    <li><a href="/pages/ferramentas/calculadora.html" class="active">Calculadora</a></li>
-                    <li><a href="/pages/ferramentas/roleta.html">Roleta</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section>
-            <h2>✷ Calculadora do RPG</h2>
-            <p>✶ As calculadoras são instrumentos que podem e devem ser usados para auxiliar os players e a administração no RPG, facilitando a vida de ambos.</p>
-            <p>✶ Alguns sistemas dependem completamente das calculadoras dispostas aqui.</p>
-            <button onclick="location.href='/pages/ferramentas/ferrini.html'">Voltar para Ferramentas</button>
-            <br>
-            <br>
-            <div class="container">
-                <h3>✷ Calculadora de Maestria</h3>
-                <p>Digite a quantidade total de xp para calcular a maestria, com valores de xp e vida.</p>
-                <input type="number" id="xpInput" placeholder="Digite o xp total">
-                <button onclick="exibirResultado()">Calcular Maestria</button>
-                <div id="resultado">
-                </div>
-            </div>
-            <br>
-        </section>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="/pages/histini.html">História do RPG</a></li>
+            <li>
+              <a href="/pages/mecânicas/mecini.html">Mecânicas de Jogo</a>
+            </li>
+            <li>
+              <a href="/pages/ferramentas/ferrini.html" class="active"
+                >Ferramentas do RPG</a
+              >
+            </li>
+            <li><a href="/pages/mapas/mapa.html">Mapa do Mundo</a></li>
+            <li><a href="/pages/raças/racini.html">Raças Sobrenaturais</a></li>
+            <li><a href="/pages/outros/outrini.html">Conteúdo Adicional</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li><a href="/pages/ferramentas/texto.html">Texto</a></li>
+            <li>
+              <a href="/pages/ferramentas/calculadora.html" class="active"
+                >Calculadora</a
+              >
+            </li>
+            <li><a href="/pages/ferramentas/roleta.html">Roleta</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <h2>✷ Calculadora do RPG</h2>
+        <p>
+          ✶ As calculadoras são instrumentos que podem e devem ser usados para
+          auxiliar os players e a administração no RPG, facilitando a vida de
+          ambos.
+        </p>
+        <p>
+          ✶ Alguns sistemas dependem completamente das calculadoras dispostas
+          aqui.
+        </p>
+        <button onclick="location.href='/pages/ferramentas/ferrini.html'">
+          Voltar para Ferramentas
+        </button>
+        <br />
+        <br />
+        <div class="container">
+          <h3>✷ Calculadora de Maestria</h3>
+          <p>
+            Digite a quantidade total de xp para calcular a maestria, com
+            valores de xp e vida.
+          </p>
+          <input type="number" id="xpInput" placeholder="Digite o xp total" />
+          <button onclick="exibirResultado()">Calcular Maestria</button>
+          <div id="resultado"></div>
+        </div>
+        <br />
+      </section>
     </main>
     <footer>
-        <p>&copy; 2025 BloodBorne RPG</p>
+      <p>&copy; 2025 BloodBorne RPG</p>
     </footer>
-</body>
+  </body>
 </html>

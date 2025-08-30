@@ -1,128 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BloodBorne RPG</title>
-    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dx5itxygw/image/upload/v1755956047/B-removebg-preview_fabdem.png">
-    <link rel="stylesheet" href="/functions/styles.css">
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://res.cloudinary.com/dx5itxygw/image/upload/v1755956047/B-removebg-preview_fabdem.png"
+    />
+    <link rel="stylesheet" href="/functions/styles.css" />
     <script src="../../../script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1><a href="/index.html">BloodBorne</a></h1>
+      <h1><a href="/index.html">BloodBorne</a></h1>
     </header>
     <main>
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="/pages/histini.html">História do RPG</a></li>
-                    <li><a href="/pages/mecânicas/mecini.html">Mecânicas de Jogo</a></li>
-                    <li><a href="/pages/ferramentas/ferrini.html">Ferramentas do RPG</a></li>
-                    <li><a href="/pages/mapas/mapa.html">Mapa do Mundo</a></li>
-                    <li><a href="/pages/raças/racini.html">Raças Sobrenaturais</a></li>
-                    <li><a href="/pages/outros/outrini.html" class="active">Conteúdo Adicional</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li><a href="/pages/outros/comércio/comecini.html">Comércio</a></li>
-                    <li><a href="/pages/outros/personagens/perini.html">Personagens</a></li>
-                    <li><a href="/pages/outros/marcas/marcas.html" class="active">Marcas</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section>
-            <h2>✷ Marcas</h2>
-            <p>✶ Marcas são as magias do rpg. Para realizar uma ação mágica você precisa ativar uma marca que fica em seu corpo, e só então pode realizar a ação.</p>
-            <p>✶ Toda marca ativa gasta 1mp por ativação + 1mp por turno subsequente.</p>
-            <p>✶ ⁠Você recupera 2mp por turno dentro de batalha quando não usar marcas.</p>
-            <p>✶ ⁠Fora de batalha você recupera 5mp por turno.</p>
-            <p>✶ Não há limite para "pm" gastos por turno, mas tenha em mente que se seus "pm" chegarem a 0, você perde automaticamente.</p>
-            <p>✶ Você pode usar até três marcas ativas por turno, a menos que tenha habilidades que permitam o contrário.</p>
-            <p>✶ Marcas inatas não precisam de mp para serem ativadas.</p>
-            <button onclick="location.href='/pages/outros/marcas/grimorio.html'">Veja o Grimório com todas as Marcas</button>
-            <br>
-            <h3>✷ Ganhando Marcas</h3>
-            <p>✶ Ganhar marcas é fácil. Você ganha as marcas do seu clã ao fazer a ficha, e ganha mais marcas ao upar de nível. A cada 10 níveis, você recebe +1 marca.</p>
-            <p>✶ Atenção: nesta tabela não consta o ganho de marcas por Prestígio, visto que é uma dinâmica optativa.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nível</th>
-                        <th>Ganho</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>00-10</td>
-                        <td>+1 marca</td>
-                        <td>4 marcas totais</td>
-                    </tr>
-                    <tr>
-                        <td>11-20</td>
-                        <td>+1 marca</td>
-                        <td>5 marcas totais</td>
-                    </tr>
-                    <tr>
-                        <td>21-30</td>
-                        <td>+2 marcas</td>
-                        <td>7 marcas totais</td>
-                    </tr>
-                    <tr>
-                        <td>31-40</td>
-                        <td>+1 marca</td>
-                        <td>8 marcas totais</td>
-                    </tr>
-                    <tr>
-                        <td>41-50</td>
-                        <td>+2 marcas</td>
-                        <td>10 marcas totais</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <h3>✷ Observações</h3>
-            <p>✶ Você recebe as marcas quando alcança o nível máximo da tabela, por exemplo, você recebe uma marca ao chegar o nível 10, 20, 40.</p>
-            <p>✶ No caso de ganhar duas marcas por vez, você recebe uma no 25 e outra no 30; e uma no 45 e outra no 50.</p>
-            <br>
-            <h3>✷ Tabela de Mana</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nível</th>
-                        <th>Mana</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>00 à 10</td>
-                        <td>3mp</td>
-                    </tr>
-                    <tr>
-                        <td>11 à 20</td>
-                        <td>5mp</td>
-                    </tr>
-                    <tr>
-                        <td>21 à 30</td>
-                        <td>8mp</td>
-                    </tr>
-                    <tr>
-                        <td>31 à 40</td>
-                        <td>12mp</td>
-                    </tr>
-                    <tr>
-                        <td>41 à 50</td>
-                        <td>15mp</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-        </section>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="/pages/histini.html">História do RPG</a></li>
+            <li>
+              <a href="/pages/mecânicas/mecini.html">Mecânicas de Jogo</a>
+            </li>
+            <li>
+              <a href="/pages/ferramentas/ferrini.html">Ferramentas do RPG</a>
+            </li>
+            <li><a href="/pages/mapas/mapa.html">Mapa do Mundo</a></li>
+            <li><a href="/pages/raças/racini.html">Raças Sobrenaturais</a></li>
+            <li>
+              <a href="/pages/outros/outrini.html" class="active"
+                >Conteúdo Adicional</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li><a href="/pages/outros/comércio/comecini.html">Comércio</a></li>
+            <li>
+              <a href="/pages/outros/personagens/perini.html">Personagens</a>
+            </li>
+            <li>
+              <a href="/pages/outros/marcas/marcas.html" class="active"
+                >Marcas</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <h2>✷ Marcas</h2>
+        <p>
+          ✶ Marcas são as magias do rpg. Para realizar uma ação mágica você
+          precisa ativar uma marca que fica em seu corpo, e só então pode
+          realizar a ação.
+        </p>
+        <p>
+          ✶ Toda marca ativa gasta 1mp por ativação + 1mp por turno subsequente.
+        </p>
+        <p>
+          ✶ ⁠Você recupera 2mp por turno dentro de batalha quando não usar
+          marcas.
+        </p>
+        <p>✶ ⁠Fora de batalha você recupera 5mp por turno.</p>
+        <p>
+          ✶ Não há limite para "pm" gastos por turno, mas tenha em mente que se
+          seus "pm" chegarem a 0, você perde automaticamente.
+        </p>
+        <p>
+          ✶ Você pode usar até três marcas ativas por turno, a menos que tenha
+          habilidades que permitam o contrário.
+        </p>
+        <p>✶ Marcas inatas não precisam de mp para serem ativadas.</p>
+        <button onclick="location.href='/pages/outros/marcas/grimorio.html'">
+          Veja o Grimório com todas as Marcas
+        </button>
+        <br />
+        <h3>✷ Ganhando Marcas</h3>
+        <p>
+          ✶ Ganhar marcas é fácil. Você ganha as marcas do seu clã ao fazer a
+          ficha, e ganha mais marcas ao upar de nível. A cada 10 níveis, você
+          recebe +1 marca.
+        </p>
+        <p>
+          ✶ Atenção: nesta tabela não consta o ganho de marcas por Prestígio,
+          visto que é uma dinâmica optativa.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Nível</th>
+              <th>Ganho</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>00-10</td>
+              <td>+1 marca</td>
+              <td>4 marcas totais</td>
+            </tr>
+            <tr>
+              <td>11-20</td>
+              <td>+1 marca</td>
+              <td>5 marcas totais</td>
+            </tr>
+            <tr>
+              <td>21-30</td>
+              <td>+2 marcas</td>
+              <td>7 marcas totais</td>
+            </tr>
+            <tr>
+              <td>31-40</td>
+              <td>+1 marca</td>
+              <td>8 marcas totais</td>
+            </tr>
+            <tr>
+              <td>41-50</td>
+              <td>+2 marcas</td>
+              <td>10 marcas totais</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <h3>✷ Observações</h3>
+        <p>
+          ✶ Você recebe as marcas quando alcança o nível máximo da tabela, por
+          exemplo, você recebe uma marca ao chegar o nível 10, 20, 40.
+        </p>
+        <p>
+          ✶ No caso de ganhar duas marcas por vez, você recebe uma no 25 e outra
+          no 30; e uma no 45 e outra no 50.
+        </p>
+        <br />
+        <h3>✷ Tabela de Mana</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Nível</th>
+              <th>Mana</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>00 à 10</td>
+              <td>3mp</td>
+            </tr>
+            <tr>
+              <td>11 à 20</td>
+              <td>5mp</td>
+            </tr>
+            <tr>
+              <td>21 à 30</td>
+              <td>8mp</td>
+            </tr>
+            <tr>
+              <td>31 à 40</td>
+              <td>12mp</td>
+            </tr>
+            <tr>
+              <td>41 à 50</td>
+              <td>15mp</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+      </section>
     </main>
     <footer>
-        <p>&copy; 2025 BloodBorne RPG</p>
+      <p>&copy; 2025 BloodBorne RPG</p>
     </footer>
-</body>
+  </body>
 </html>

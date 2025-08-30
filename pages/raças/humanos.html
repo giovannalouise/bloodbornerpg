@@ -1,65 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BloodBorne RPG</title>
-    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dx5itxygw/image/upload/v1755956047/B-removebg-preview_fabdem.png">
-    <link rel="stylesheet" href="/functions/styles.css">
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://res.cloudinary.com/dx5itxygw/image/upload/v1755956047/B-removebg-preview_fabdem.png"
+    />
+    <link rel="stylesheet" href="/functions/styles.css" />
     <script src="../../script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1><a href="/index.html">BloodBorne</a></h1>
+      <h1><a href="/index.html">BloodBorne</a></h1>
     </header>
     <main>
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="/pages/histini.html">História do RPG</a></li>
-                    <li><a href="/pages/mecânicas/mecini.html">Mecânicas de Jogo</a></li>
-                    <li><a href="/pages/ferramentas/ferrini.html">Ferramentas do RPG</a></li>
-                    <li><a href="/pages/mapas/mapa.html">Mapa do Mundo</a></li>
-                    <li><a href="/pages/raças/racini.html" class="active">Raças Sobrenaturais</a></li>
-                    <li><a href="/pages/outros/outrini.html">Conteúdo Adicional</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li><a href="/pages/raças/seraphins.html">Seraphins</a></li>
-                    <li><a href="/pages/raças/infernais.html">Infernais</a></li>
-                    <li><a href="/pages/raças/vampyr.html">Vampyrs</a></li>
-                    <li><a href="/pages/raças/lykan.html">Lykan</a></li>
-                    <li><a href="/pages/raças/humanos.html" class="active">Humanos</a></li>
-                    <li><a href="/pages/raças/strigoi.html">Strigois</a></li>
-                    <li><a href="/pages/raças/sereias.html">Sereias</a></li>
-                    <li><a href="/pages/raças/sylvans.html">Sylvans</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section>
-            <h2>✷ Humanos</h2>
-            <p>A raça mais versátil e adaptável, os humanos possuem uma ampla gama de habilidades e talentos. Sua ambição e criatividade os tornam uma força a ser reconhecida.</p>
-            <p>✶ Caracteristicas 1.</p>
-            <p>✶ Caracteristicas 2.</p>
-            <p>✶ Caracteristicas 3.</p>
-            <p>✶ Caracteristicas 4.</p>
-            <p>✶ Caracteristicas 5.</p>
-            <br>
-            <h3>✷ Selecione um Clã para ver a descrição.</h3>
-            <div class="clans-botoes">
-                <button onclick="mudarConteudo('purge')">Purge</button>
-                <button onclick="mudarConteudo('eclipse')">Eclipse</button>
-            </div>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="/pages/histini.html">História do RPG</a></li>
+            <li>
+              <a href="/pages/mecânicas/mecini.html">Mecânicas de Jogo</a>
+            </li>
+            <li>
+              <a href="/pages/ferramentas/ferrini.html">Ferramentas do RPG</a>
+            </li>
+            <li><a href="/pages/mapas/mapa.html">Mapa do Mundo</a></li>
+            <li>
+              <a href="/pages/raças/racini.html" class="active"
+                >Raças Sobrenaturais</a
+              >
+            </li>
+            <li><a href="/pages/outros/outrini.html">Conteúdo Adicional</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li><a href="/pages/raças/seraphins.html">Seraphins</a></li>
+            <li><a href="/pages/raças/infernais.html">Infernais</a></li>
+            <li><a href="/pages/raças/vampyr.html">Vampyrs</a></li>
+            <li><a href="/pages/raças/lykan.html">Lykan</a></li>
+            <li>
+              <a href="/pages/raças/humanos.html" class="active">Humanos</a>
+            </li>
+            <li><a href="/pages/raças/strigoi.html">Strigois</a></li>
+            <li><a href="/pages/raças/sereias.html">Sereias</a></li>
+            <li><a href="/pages/raças/sylvans.html">Sylvans</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <h2>✷ Humanos</h2>
+        <p>
+          A raça mais versátil e adaptável, os humanos possuem uma ampla gama de
+          habilidades e talentos. Sua ambição e criatividade os tornam uma força
+          a ser reconhecida.
+        </p>
+        <p>✶ Caracteristicas 1.</p>
+        <p>✶ Caracteristicas 2.</p>
+        <p>✶ Caracteristicas 3.</p>
+        <p>✶ Caracteristicas 4.</p>
+        <p>✶ Caracteristicas 5.</p>
+        <br />
+        <h3>✷ Selecione um Clã para ver a descrição.</h3>
+        <div class="clans-botoes">
+          <button onclick="mudarConteudo('purge')">Purge</button>
+          <button onclick="mudarConteudo('eclipse')">Eclipse</button>
+        </div>
 
-            <div id="conteudo-clans">
-                <h4>Nenhum Clã selecionado.</h4>
-            </div>
-            <br>
-        </section>
+        <div id="conteudo-clans">
+          <h4>Nenhum Clã selecionado.</h4>
+        </div>
+        <br />
+      </section>
     </main>
     <footer>
-        <p>&copy; 2025 BloodBorne RPG</p>
+      <p>&copy; 2025 BloodBorne RPG</p>
     </footer>
-</body>
+  </body>
 </html>

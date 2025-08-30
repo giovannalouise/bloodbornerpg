@@ -1,92 +1,193 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BloodBorne RPG</title>
-    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dx5itxygw/image/upload/v1755956047/B-removebg-preview_fabdem.png">
-    <link rel="stylesheet" href="/functions/styles.css">
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://res.cloudinary.com/dx5itxygw/image/upload/v1755956047/B-removebg-preview_fabdem.png"
+    />
+    <link rel="stylesheet" href="/functions/styles.css" />
     <script src="../../script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1><a href="/index.html">BloodBorne</a></h1>
+      <h1><a href="/index.html">BloodBorne</a></h1>
     </header>
     <main>
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="/pages/histini.html">História do RPG</a></li>
-                    <li><a href="/pages/mecânicas/mecini.html" class="active">Mecânicas de Jogo</a></li>
-                    <li><a href="/pages/ferramentas/ferrini.html">Ferramentas do RPG</a></li>
-                    <li><a href="/pages/mapas/mapa.html">Mapa do Mundo</a></li>
-                    <li><a href="/pages/raças/racini.html">Raças Sobrenaturais</a></li>
-                    <li><a href="/pages/outros/outrini.html">Conteúdo Adicional</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li><a href="/pages/mecânicas/maestria.html">Maestria</a></li>
-                    <li><a href="/pages/mecânicas/dinheiro.html">Monetário</a></li>
-                    <li><a href="/pages/mecânicas/prestigio.html" class="active">Prestígio</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section>
-            <h2>✷ Árvore de Prestígio</h2>
-            <p>✶ A hierarquia em nosso reino é uma escala de poder, uma forma de mostrar sua importância e influência na corte. É através dela que você pode subir de posição, deixando de ser um plebeu comum para se tornar um nobre de grande poder.</p>
-            <p>✶ Sua posição na hierarquia não é fixa. Ela depende do seu Prestígio, que é como uma medida de sua reputação, honra e serviços à Coroa. Você ganha Prestígio ao completar missões para o rei, agir com nobreza e ajudar o povo, ou até mesmo ao se envolver em intrigas da corte que beneficiam a realeza.</p>
-            <p>✶ Cada novo nível de Prestígio abre portas para novos títulos, como o de Cavaleiro, Barão ou Visconde. Com esses títulos, vêm novos privilégios: acesso a mais prata, a habilidades especiais e à capacidade de influenciar a vida política e militar do reino.</p>
-            <p>✶ Em resumo, a hierarquia é sua jornada para o poder, e o Prestígio é o mapa que te guia. A árvore de Prestígio mostra as habilidades ganhas.</p>
-            <p>✶ Ao subir de "cargo", você deve escolher uma das marcas para seu personagem, mantendo a marca do nível anterior e acumulando-a.</p>
-            <button onclick="location.href='/pages/mecânicas/prestigio.html'">Voltar para Mecânicas de Prestígio</button>
-        </section>
-        <br>
-        <section>
-            <h3>✷ Ajudante da Corte</h3>
-            <p>Um assistente da realeza, sua posição é de aprendizado e observação dos costumes da corte.</p>
-            <h4>✷ Marcas adicionais</h4>
-            <h4>✶ Ajudante fiel</h4><p>Por mês, recebe dois descontos de 10% em itens comprados com prata comum, que não podem ser usados juntos.</p>
-            <br>
-            <h3>✷ Cavaleiro</h3>
-            <p>Um guerreiro juramentado, leal à Coroa, que defende o reino e seus ideais.</p>
-            <h4>✷ Marcas adicionais</h4>
-            <h4>✶ Juramentado</h4><p>Enquanto lutar ao lado de outro cavaleiro, você recebe um bônus de 15% a mais de pv.</p>
-            <br>
-            <h3>✷ Barão</h3>
-            <p>Um nobre que governa seu próprio feudo, sendo responsável por administrar a justiça e coletar impostos.</p>
-            <h4>✷ Marcas adicionais</h4>
-            <h4>✶ Senhor do Feudo</h4><p>Você tem acesso a informações da corte, e por isso consegue se mover livremente entre as regiões, sem ser contestado por isso. Os reinos te reconhecem como alguém poderoso, nenhuma entrada ou saída pode ser barrada, a menos que seja pelo rei daquele território.</p>
-            <br>
-            <h3>✷ Visconde</h3>
-            <p>Um nobre que governa múltiplos feudos, com um papel crucial na administração e diplomacia de grandes regiões do reino.</p>
-            <h4>✷ Marcas adicionais</h4>
-            <h4>✶ Diplomata</h4><p>Seus contratos e ações geram um bônus de 5% de prata rubra.</p>
-            <h4>✶ Administrador</h4><p>Toda vez que você administra as finanças de um feudo, ganha um bônus de 15% de prata comum.</p>
-            <br>
-            <h3>✷ Duque</h3>
-            <p>Um nobre extremamente poderoso, com controle sobre províncias inteiras e um assento no conselho do Rei.</p>
-            <h4>✷ Marcas adicionais</h4>
-            <h4>✶ Conselheiro</h4><p>Consegue se comunicar diretamente com todos os reis, podendo influenciar suas decisões, ainda que seja de outro reino.</p>
-            <h4>✶ Estrategista</h4><p>Durante uma batalha, você tem acesso a uma informação privilegiada, dada pelos reis.</p>
-            <br>
-            <h3>✷ Príncipe</h3>
-            <p>Um título para o herdeiro do trono ou para aqueles cuja lealdade é inquestionável. É o braço direito da realeza.</p>
-            <h4>✷ Marcas adicionais</h4>
-            <h4>✶ Lealdade</h4><p>Enquanto lutar ao lado de sua raça, recebe um bônus de 25% de pv.</p>
-            <h4>✶ Mão Direita</h4><p>Você é o conselheiro mais próximo do rei, e por isso pode fazer acordos no mercado negro em nome dele, recebendo uma parte dos lucros, que variam de 10% a 15% dependendo do acordo.</p>
-            <br>
-            <h3>✷ Rei</h3>
-            <p>O governante supremo do reino, detentor do maior prestígio e poder.</p>
-            <h4>✷ Marcas adicionais</h4>
-            <h4>✶ Burocracia</h4><p>Seus súditos recebem um bônus de 20% de prata comum.</p>
-            <h4>✶ Ditador</h4><p>Você e seus príncipes e duques recebem um bônus de 10% de prata comum e 10% de xp em todas as suas ações.</p>
-            <h4>✶ Amigo do Povo</h4><p>Seus discursos e ações geram um bônus de 20% de xp para todos os seus súditos.</p>
-        </section>
-        <br>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="/pages/histini.html">História do RPG</a></li>
+            <li>
+              <a href="/pages/mecânicas/mecini.html" class="active"
+                >Mecânicas de Jogo</a
+              >
+            </li>
+            <li>
+              <a href="/pages/ferramentas/ferrini.html">Ferramentas do RPG</a>
+            </li>
+            <li><a href="/pages/mapas/mapa.html">Mapa do Mundo</a></li>
+            <li><a href="/pages/raças/racini.html">Raças Sobrenaturais</a></li>
+            <li><a href="/pages/outros/outrini.html">Conteúdo Adicional</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li><a href="/pages/mecânicas/maestria.html">Maestria</a></li>
+            <li><a href="/pages/mecânicas/dinheiro.html">Monetário</a></li>
+            <li>
+              <a href="/pages/mecânicas/prestigio.html" class="active"
+                >Prestígio</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <h2>✷ Árvore de Prestígio</h2>
+        <p>
+          ✶ A hierarquia em nosso reino é uma escala de poder, uma forma de
+          mostrar sua importância e influência na corte. É através dela que você
+          pode subir de posição, deixando de ser um plebeu comum para se tornar
+          um nobre de grande poder.
+        </p>
+        <p>
+          ✶ Sua posição na hierarquia não é fixa. Ela depende do seu Prestígio,
+          que é como uma medida de sua reputação, honra e serviços à Coroa. Você
+          ganha Prestígio ao completar missões para o rei, agir com nobreza e
+          ajudar o povo, ou até mesmo ao se envolver em intrigas da corte que
+          beneficiam a realeza.
+        </p>
+        <p>
+          ✶ Cada novo nível de Prestígio abre portas para novos títulos, como o
+          de Cavaleiro, Barão ou Visconde. Com esses títulos, vêm novos
+          privilégios: acesso a mais prata, a habilidades especiais e à
+          capacidade de influenciar a vida política e militar do reino.
+        </p>
+        <p>
+          ✶ Em resumo, a hierarquia é sua jornada para o poder, e o Prestígio é
+          o mapa que te guia. A árvore de Prestígio mostra as habilidades
+          ganhas.
+        </p>
+        <p>
+          ✶ Ao subir de "cargo", você deve escolher uma das marcas para seu
+          personagem, mantendo a marca do nível anterior e acumulando-a.
+        </p>
+        <button onclick="location.href='/pages/mecânicas/prestigio.html'">
+          Voltar para Mecânicas de Prestígio
+        </button>
+      </section>
+      <br />
+      <section>
+        <h3>✷ Ajudante da Corte</h3>
+        <p>
+          Um assistente da realeza, sua posição é de aprendizado e observação
+          dos costumes da corte.
+        </p>
+        <h4>✷ Marcas adicionais</h4>
+        <h4>✶ Ajudante fiel</h4>
+        <p>
+          Por mês, recebe dois descontos de 10% em itens comprados com prata
+          comum, que não podem ser usados juntos.
+        </p>
+        <br />
+        <h3>✷ Cavaleiro</h3>
+        <p>
+          Um guerreiro juramentado, leal à Coroa, que defende o reino e seus
+          ideais.
+        </p>
+        <h4>✷ Marcas adicionais</h4>
+        <h4>✶ Juramentado</h4>
+        <p>
+          Enquanto lutar ao lado de outro cavaleiro, você recebe um bônus de 15%
+          a mais de pv.
+        </p>
+        <br />
+        <h3>✷ Barão</h3>
+        <p>
+          Um nobre que governa seu próprio feudo, sendo responsável por
+          administrar a justiça e coletar impostos.
+        </p>
+        <h4>✷ Marcas adicionais</h4>
+        <h4>✶ Senhor do Feudo</h4>
+        <p>
+          Você tem acesso a informações da corte, e por isso consegue se mover
+          livremente entre as regiões, sem ser contestado por isso. Os reinos te
+          reconhecem como alguém poderoso, nenhuma entrada ou saída pode ser
+          barrada, a menos que seja pelo rei daquele território.
+        </p>
+        <br />
+        <h3>✷ Visconde</h3>
+        <p>
+          Um nobre que governa múltiplos feudos, com um papel crucial na
+          administração e diplomacia de grandes regiões do reino.
+        </p>
+        <h4>✷ Marcas adicionais</h4>
+        <h4>✶ Diplomata</h4>
+        <p>Seus contratos e ações geram um bônus de 5% de prata rubra.</p>
+        <h4>✶ Administrador</h4>
+        <p>
+          Toda vez que você administra as finanças de um feudo, ganha um bônus
+          de 15% de prata comum.
+        </p>
+        <br />
+        <h3>✷ Duque</h3>
+        <p>
+          Um nobre extremamente poderoso, com controle sobre províncias inteiras
+          e um assento no conselho do Rei.
+        </p>
+        <h4>✷ Marcas adicionais</h4>
+        <h4>✶ Conselheiro</h4>
+        <p>
+          Consegue se comunicar diretamente com todos os reis, podendo
+          influenciar suas decisões, ainda que seja de outro reino.
+        </p>
+        <h4>✶ Estrategista</h4>
+        <p>
+          Durante uma batalha, você tem acesso a uma informação privilegiada,
+          dada pelos reis.
+        </p>
+        <br />
+        <h3>✷ Príncipe</h3>
+        <p>
+          Um título para o herdeiro do trono ou para aqueles cuja lealdade é
+          inquestionável. É o braço direito da realeza.
+        </p>
+        <h4>✷ Marcas adicionais</h4>
+        <h4>✶ Lealdade</h4>
+        <p>Enquanto lutar ao lado de sua raça, recebe um bônus de 25% de pv.</p>
+        <h4>✶ Mão Direita</h4>
+        <p>
+          Você é o conselheiro mais próximo do rei, e por isso pode fazer
+          acordos no mercado negro em nome dele, recebendo uma parte dos lucros,
+          que variam de 10% a 15% dependendo do acordo.
+        </p>
+        <br />
+        <h3>✷ Rei</h3>
+        <p>
+          O governante supremo do reino, detentor do maior prestígio e poder.
+        </p>
+        <h4>✷ Marcas adicionais</h4>
+        <h4>✶ Burocracia</h4>
+        <p>Seus súditos recebem um bônus de 20% de prata comum.</p>
+        <h4>✶ Ditador</h4>
+        <p>
+          Você e seus príncipes e duques recebem um bônus de 10% de prata comum
+          e 10% de xp em todas as suas ações.
+        </p>
+        <h4>✶ Amigo do Povo</h4>
+        <p>
+          Seus discursos e ações geram um bônus de 20% de xp para todos os seus
+          súditos.
+        </p>
+      </section>
+      <br />
     </main>
     <footer>
-        <p>&copy; 2025 BloodBorne RPG</p>
+      <p>&copy; 2025 BloodBorne RPG</p>
     </footer>
-</body>
+  </body>
 </html>
